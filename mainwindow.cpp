@@ -34,8 +34,9 @@ void MainWindow::SetUpSignalsAndSlots(){
     connect(ui->SubtractButton, SIGNAL(clicked()), this, SLOT(SubtractionButtonClicked()));
     connect(ui->ProductButton,  SIGNAL(clicked()), this, SLOT(ProductButtonClicked()));
     connect(ui->DivisionButton, SIGNAL(clicked()), this, SLOT(DivisionButtonClicked()));
-
-    connect(ui->ResultButton, SIGNAL(clicked()), this, SLOT(ResultButtonClicked()));
+    connect(ui->DotButton,      SIGNAL(clicked()), this, SLOT(PeriodButtonClicked()));
+    connect(ui->ResultButton,   SIGNAL(clicked()), this, SLOT(ResultButtonClicked()));
+    connect(ui->BackspaceButton,SIGNAL(clicked()), this, SLOT(BackspaceButtonClicked()));
 }
 
 void MainWindow::InputProcessor(){
@@ -58,6 +59,12 @@ void MainWindow::AcButtonClicked(){
     EnableAllButtons();
     ui->ScreenlineEdit->clear();
     ScreenTemporalMemory.clear();
+}
+
+void MainWindow::BackspaceButtonClicked(){
+
+    ScreenTemporalMemory.removeLast();
+    ui->ScreenlineEdit->setText(ScreenTemporalMemory);
 }
 
 void MainWindow::NUM0Clicked(){
@@ -157,14 +164,31 @@ void MainWindow::DivisionButtonClicked(){
     DisableOperations();
 }
 
+void MainWindow::PeriodButtonClicked(){
+
+    ScreenTemporalMemory.append(".");
+    ui->ScreenlineEdit->setText(ScreenTemporalMemory);
+    DisableOperations();
+}
+
 void MainWindow::ResultButtonClicked(){
 
     SyntaxErrorCheck();
 
-    InputProcessor();
+    if(SyntaxErrorCheck())
+        InputProcessor();
 }
 
-void MainWindow::SyntaxErrorCheck(){
+bool MainWindow::SyntaxErrorCheck(){
+
+    if(ScreenTemporalMemory.endsWith(".") || ScreenTemporalMemory.startsWith(".")){
+
+        DisableAllButtons();
+        ScreenTemporalMemory.clear();
+        ScreenTemporalMemory = "Syntax ERROR - [AC]:Cancel";
+        ui->ScreenlineEdit->setText(ScreenTemporalMemory);
+        return false;
+    }
 
     if(ScreenTemporalMemory.endsWith("+") || ScreenTemporalMemory.startsWith("+")){
 
@@ -172,6 +196,7 @@ void MainWindow::SyntaxErrorCheck(){
         ScreenTemporalMemory.clear();
         ScreenTemporalMemory = "Syntax ERROR - [AC]:Cancel";
         ui->ScreenlineEdit->setText(ScreenTemporalMemory);
+        return false;
     }
 
     if(ScreenTemporalMemory.endsWith("-") || ScreenTemporalMemory.startsWith("-")){
@@ -180,6 +205,7 @@ void MainWindow::SyntaxErrorCheck(){
         ScreenTemporalMemory.clear();
         ScreenTemporalMemory = "Syntax ERROR - [AC]:Cancel";
         ui->ScreenlineEdit->setText(ScreenTemporalMemory);
+        return false;
     }
 
     if(ScreenTemporalMemory.endsWith("*") || ScreenTemporalMemory.startsWith("*")){
@@ -188,6 +214,7 @@ void MainWindow::SyntaxErrorCheck(){
         ScreenTemporalMemory.clear();
         ScreenTemporalMemory = "Syntax ERROR - [AC]:Cancel";
         ui->ScreenlineEdit->setText(ScreenTemporalMemory);
+        return false;
     }
 
     if(ScreenTemporalMemory.endsWith("/") || ScreenTemporalMemory.startsWith("/")){
@@ -196,7 +223,10 @@ void MainWindow::SyntaxErrorCheck(){
         ScreenTemporalMemory.clear();
         ScreenTemporalMemory = "Syntax ERROR - [AC]:Cancel";
         ui->ScreenlineEdit->setText(ScreenTemporalMemory);
+        return false;
     }
+
+    return true;
 }
 
 void MainWindow::DisableAllButtons(){

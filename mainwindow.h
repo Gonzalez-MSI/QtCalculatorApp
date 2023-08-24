@@ -28,9 +28,11 @@ private slots:
     void SetUpSignalsAndSlots();
     //-----------------------------------
 
-    //All Clear function
+    //All Clear and Backspace functions
     //-----------------------------------
     void AcButtonClicked();
+
+    void BackspaceButtonClicked();
     //-----------------------------------
 
     //Numeric Buttons
@@ -56,7 +58,6 @@ private slots:
     void NUM9Clicked();
     //-----------------------------------
 
-
     //Operations Buttons
     //-----------------------------------
     void AdditionButtonClicked();
@@ -68,13 +69,15 @@ private slots:
     void DivisionButtonClicked();
 
     void ResultButtonClicked();
+
+    void PeriodButtonClicked();
     //-----------------------------------
 
     //Error Detection & System Functions
     //-----------------------------------
-    void InputProcessor();
+    bool SyntaxErrorCheck();
 
-    void SyntaxErrorCheck();
+    void InputProcessor();
 
     void EnableAllButtons();
 
