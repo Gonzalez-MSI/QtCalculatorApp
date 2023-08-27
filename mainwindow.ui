@@ -46,6 +46,12 @@
        <pointsize>18</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>7</string>
      </property>
@@ -63,6 +69,12 @@
       <font>
        <pointsize>18</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
      </property>
      <property name="text">
       <string>8</string>
@@ -82,6 +94,12 @@
        <pointsize>18</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>4</string>
      </property>
@@ -99,6 +117,12 @@
       <font>
        <pointsize>18</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
      </property>
      <property name="text">
       <string>5</string>
@@ -118,6 +142,12 @@
        <pointsize>18</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>2</string>
      </property>
@@ -135,6 +165,12 @@
       <font>
        <pointsize>18</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -154,6 +190,12 @@
        <pointsize>18</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>.</string>
      </property>
@@ -172,6 +214,12 @@
        <pointsize>18</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -180,7 +228,7 @@
      <property name="geometry">
       <rect>
        <x>200</x>
-       <y>275</y>
+       <y>274</y>
        <width>91</width>
        <height>71</height>
       </rect>
@@ -189,6 +237,12 @@
       <font>
        <pointsize>18</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
      </property>
      <property name="text">
       <string>=</string>
@@ -198,7 +252,7 @@
      <property name="geometry">
       <rect>
        <x>200</x>
-       <y>126</y>
+       <y>125</y>
        <width>91</width>
        <height>71</height>
       </rect>
@@ -207,6 +261,12 @@
       <font>
        <pointsize>18</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
      </property>
      <property name="text">
       <string>6</string>
@@ -226,6 +286,12 @@
        <pointsize>18</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>9</string>
      </property>
@@ -244,6 +310,12 @@
        <pointsize>18</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>3</string>
      </property>
@@ -251,7 +323,7 @@
     <widget class="QPushButton" name="AdditionButton">
      <property name="geometry">
       <rect>
-       <x>299</x>
+       <x>300</x>
        <y>294</y>
        <width>75</width>
        <height>51</height>
@@ -262,6 +334,12 @@
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
      </property>
      <property name="text">
       <string>+</string>
@@ -282,6 +360,12 @@
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>-</string>
      </property>
@@ -300,6 +384,12 @@
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
      </property>
      <property name="text">
       <string>x</string>
@@ -320,6 +410,12 @@
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>÷</string>
      </property>
@@ -339,6 +435,12 @@
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
+     </property>
      <property name="text">
       <string>⌫</string>
      </property>
@@ -357,6 +459,12 @@
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {background-color: #d9d9d9
+
+}
+</string>
      </property>
      <property name="text">
       <string>AC</string>
@@ -388,6 +496,11 @@
       <height>111</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+					</string>
+    </property>
     <property name="frameShape">
      <enum>QFrame::Panel</enum>
     </property>
@@ -399,7 +512,7 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>351</width>
+       <width>353</width>
        <height>91</height>
       </rect>
      </property>
@@ -407,12 +520,15 @@
       <enum>QFrame::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
      </property>
      <widget class="QLineEdit" name="ScreenlineEdit">
       <property name="geometry">
        <rect>
-        <x>4</x>
+        <x>6</x>
         <y>6</y>
         <width>341</width>
         <height>81</height>
@@ -434,6 +550,28 @@
      </widget>
     </widget>
    </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>0</y>
+      <width>401</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <zorder>frame_4</zorder>
+   <zorder>frame</zorder>
+   <zorder>frame_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
